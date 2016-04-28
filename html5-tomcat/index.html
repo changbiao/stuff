@@ -1,6 +1,6 @@
 <html id='root'>
     <head>
-        <title>汤姆猫-学习</title>
+        <title>汤姆猫-教学</title>
         <meta charset="utf-8">
             <!-- style 标签内部包含的是css的层叠样式表 -->
             <style>
@@ -11,15 +11,16 @@
                 }
             img {
                 border-color: red;
-                border-width: 30px;
+                border-width: 3px;
                 border-style: inset;
             }
             </style>
             </head>
-    <body onclick="action(event); alert('body被点击了')"  >
-        <a style="font-size: 9pt;"> H5小例子</a>
-        <input type="button" value="调用OC的push方法，跳到下个界面" onclick='callOC();' />
-        <img  id="tom" src="angry/angry_00.jpg">
+    <body>
+        <a style="font-size: 9pt;">H5小例子 TODO:需要考虑到网络情况，对图片进行内存预加载</a>
+        </br>
+        <input type="button" value="js调用OC的push方法，跳到下个界面" onclick='callOC();' />
+        <img onclick="action(event); alert('body被点击了')" id="tom" src="angry/angry_00.jpg">
             <audio id="player"></audio>
             <script>
                 //var变量, 变量类型可以自动推导
@@ -39,125 +40,127 @@
                  每行遇到换行符就是一个语句,不需要强制加;号
                  */
             
-            //callOC();
-            function callOC() {
-                //js调用OC，需要先设置WebView的代理
-                //重定向到新的自己构造的url
-                alert("js调用OC，将要跳转到指定界面");
-                window.location = "changbiao://jmp.to.page?segue=green";
-            }
-            
-            function synSum(a, b) {
-                var result = a + b;
-                alert("js计算：" + a + " + " + b + " = " + result);
-                return a + b;
-            }
-            var result = synSum(100, 222);
-            //alert(result);
-            
-            
-            
-            //播放帧动画，有三个参数，
-            //string类型的name，播放动画名字
-            //total数字类型的，指定总共有多少张，
-            //startAt数字类型的，指定从哪里开始播放
-            //如果有返回值，类型不需要定义
-            function play(name, total, startAt) {
-                var i = 0;
-                //调用执行动画
-                animate();
+                //callOC();
+                function callOC() {
+                    //js调用OC，需要先设置WebView的代理
+                    //重定向到新的自己构造的url
+                    alert("js调用OC，将要跳转到指定界面");
+                    //执行Stroyboard上指定的segue过渡
+                    window.location = "changbiao://jmp.to.page?segue=green";
+                }
                 
-                //执行动画
-                function animate() {
-                    //拼接指定索引的图片的url
-                    var src = name + '/' + name + '_' + (i < 10 ? + '0' : '') + i + '.jpg'
-                    //把指定索引的图片显示到img
-                    img.src = src
-                    console.log("图片的url: " + src);
+
+                function synSum(a, b) {
+                    var result = a + b;
+                    alert("js计算：" + a + " + " + b + " = " + result);
+                    return a + b;
+                }
+                var result = synSum(100, 222);
+                //alert(result);
+                
+                
+                
+                //播放帧动画，有三个参数，
+                //string类型的name，播放动画名字
+                //total数字类型的，指定总共有多少张，
+                //startAt数字类型的，指定从哪里开始播放
+                //如果有返回值，类型不需要定义
+                function play(name, total, startAt) {
+                    var i = 0;
+                    //调用执行动画
+                    animate();
                     
-                    //判断播放不同的声音
-                    if (i < total) {
-                        //用到了递归, 过100毫秒之后调用方法本身
-                        //定时器,
-                        //var timer =
-                        setTimeout(animate, 100)
+                    //执行动画
+                    function animate() {
+                        //拼接指定索引的图片的url
+                        var src = name + '/' + name + '_' + (i < 10 ? + '0' : '') + i + '.jpg'
+                        //把指定索引的图片显示到img
+                        img.src = src
+                        console.log("图片的url: " + src);
                         
-                        //播放指定的音频
-                        if (i == startAt) {
-                            //指定播放的音频路径
-                            player.src = 'sounds/' + name + '.m4a'
-                            //调用播放
-                            player.play();
+                        //判断播放不同的声音
+                        if (i < total) {
+                            //用到了递归, 过100毫秒之后调用方法本身
+                            //定时器,
+                            //var timer =
+                            setTimeout(animate, 100)
+                            
+                            //播放指定的音频
+                            if (i == startAt) {
+                                //指定播放的音频路径
+                                player.src = 'sounds/' + name + '.m4a'
+                                //调用播放
+                                player.play();
+                            }
+                            
+                            //特殊场景的处理，倒水、喝水的声音
+                            if (name == 'drink' && i == 10) { // drink 需要2个音频
+                                player.src = 'sounds/pour.m4a';
+                                player.play();
+                            }
+                            if (name == 'knockout' && i == 0) {
+                                player.src = 'sounds/fall.m4a';
+                                player.play();
+                            }
+                            //索引增加
+                            i++;
                         }
-                        
-                        //特殊场景的处理，倒水、喝水的声音
-                        if (name == 'drink' && i == 10) { // drink 需要2个音频
-                            player.src = 'sounds/pour.m4a';
-                            player.play();
-                        }
-                        if (name == 'knockout' && i == 0) {
-                            player.src = 'sounds/fall.m4a';
-                            player.play();
-                        }
-                        //索引增加
-                        i++;
+                    }
+                    return "js的返回值";
+                }
+                
+                //处理鼠标的点击事件
+                function action(event){
+                    window.alert("Hello world!");
+                    //获取点击的坐标
+                    var x = event.pageX * 360 / w;
+                    var y = event.pageY * 640 / h;
+                    
+                    //判断坐标，不同坐标点播放不同的声音
+                    if(x > 140 && x < 225 && y > 400 && y < 450) {
+                        //播放指定的动画
+                        play('angry', 25, 0);
+                    }
+                    
+                    if(x > 119 && x < 245 && y > 465 && y < 565) {
+                        play('stomach', 33, 0);
+                    }
+                    
+                    if(x > 155 && x < 210 && y > 190 && y < 230) {
+                        play('knockout', 80, 13);
+                    }
+                    
+                    if(x > 137 && x < 235 && y > 250 && y < 280) {
+                        if(x < 185)
+                        play('eat', 39, 0);
+                        else
+                        play('drink', 80, 30);
+                    }
+                    
+                    if(x > 124 && x < 240 && y > 160 && y < 190) {
+                        play('cymbal', 12, 0);
+                    }
+                    
+                    if(x > 246 && x < 280 && y > 490 && y < 580) {
+                        play('fart', 27, 0);
+                    }
+                    
+                    if(x > 80 && x < 120 && y > 110 && y < 195) {
+                        play('scratch', 55, 15);
+                    }
+                    
+                    if(x > 240 && x <290 && y > 110 && y < 200) {
+                        play('pie', 23, 12);
+                    }
+                    
+                    if(x > 125 && x < 175 && y > 570 && y < 620) {
+                        play('foot_right', 29, 0);
+                    }
+                    
+                    if(x > 180 && x < 230 && y > 570 && y < 620) {
+                        play('foot_left', 29, 0);
                     }
                 }
-                return "js的返回值";
-            }
-            
-            //处理鼠标的点击事件
-            function action(event){
-                window.alert("Hello world!");
-                //获取点击的坐标
-                var x = event.pageX * 360 / w;
-                var y = event.pageY * 640 / h;
-                
-                //判断坐标，不同坐标点播放不同的声音
-                if(x > 140 && x < 225 && y > 400 && y < 450) {
-                    //播放指定的动画
-                    play('angry', 25, 0);
-                }
-                
-                if(x > 119 && x < 245 && y > 465 && y < 565) {
-                    play('stomach', 33, 0);
-                }
-                
-                if(x > 155 && x < 210 && y > 190 && y < 230) {
-                    play('knockout', 80, 13);
-                }
-                
-                if(x > 137 && x < 235 && y > 250 && y < 280) {
-                    if(x < 185)
-                    play('eat', 39, 0);
-                    else
-                    play('drink', 80, 30);
-                }
-                
-                if(x > 124 && x < 240 && y > 160 && y < 190) {
-                    play('cymbal', 12, 0);
-                }
-                
-                if(x > 246 && x < 280 && y > 490 && y < 580) {
-                    play('fart', 27, 0);
-                }
-                
-                if(x > 80 && x < 120 && y > 110 && y < 195) {
-                    play('scratch', 55, 15);
-                }
-                
-                if(x > 240 && x <290 && y > 110 && y < 200) {
-                    play('pie', 23, 12);
-                }
-                
-                if(x > 125 && x < 175 && y > 570 && y < 620) {
-                    play('foot_right', 29, 0);
-                }
-                
-                if(x > 180 && x < 230 && y > 570 && y < 620) {
-                    play('foot_left', 29, 0);
-                }
-            }
             </script>
             </body>
 </html>
