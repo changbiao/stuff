@@ -1,7 +1,7 @@
 
-
+//js修改ObjC的bug的补丁
 defineClass('ViewController', {
-	 sendMsgToJS: function(sender) {
-	 _bridge.send(self.msgField().text());
+	sendMsgToJS: function(sender) {
+	  self.bridge().send(self.msgField().text());
 	},
 });
