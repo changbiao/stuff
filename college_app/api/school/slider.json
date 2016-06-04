@@ -1,0 +1,24 @@
+{
+  "status": 2000,
+  "message": "获取滑块成功",
+  "data": [
+    {
+      "school_slider_id": 1,
+      "school_slider_title": "滑动图1",
+      "school_slider_url": "static/res/slider/slider_160517_195800.jpg",
+      "school_slider_url_ab": "https://studentapp-kblog.rhcloud.com/static/res/slider/slider_160517_195800.jpg"
+    },
+    {
+      "school_slider_id": 2,
+      "school_slider_title": "滑动图2",
+      "school_slider_url": "static/res/slider/slider_160517_195900.jpg",
+      "school_slider_url_ab": "https://studentapp-kblog.rhcloud.com/static/res/slider/slider_160517_195900.jpg"
+    },
+    {
+      "school_slider_id": 3,
+      "school_slider_title": "滑动图3",
+      "school_slider_url": "static/res/slider/slider_160517_200000.jpg",
+      "school_slider_url_ab": "https://studentapp-kblog.rhcloud.com/static/res/slider/slider_160517_200000.jpg"
+    }
+  ]
+}

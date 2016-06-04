@@ -1,0 +1,20 @@
+{
+  "status": 2000,
+  "message": "获取学院新闻成功",
+  "data": [
+    {
+      "school_news_title": "郑州大学举办“祖国颂”摄影展",
+      "school_news_addtime": null,
+      "school_news_thumb": "static/res/news/1193143580.jpg",
+      "school_news_thumb_ab": null,
+      "detail": "/api/schoolnews/newsdetail/signature/ad569e516e5d6d1b10e607956fd7059f/id/4"
+    },
+    {
+      "school_news_title": "全省规范化司法所长培训班在郑州大学举办",
+      "school_news_addtime": null,
+      "school_news_thumb": "static/res/news/160518.jpg",
+      "school_news_thumb_ab": null,
+      "detail": "/api/schoolnews/newsdetail/signature/ad569e516e5d6d1b10e607956fd7059f/id/1"
+    }
+  ]
+}
