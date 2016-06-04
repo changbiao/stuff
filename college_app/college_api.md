@@ -1,5 +1,5 @@
 #### 服务端短信验证接口 
-+ 方法:POST   接口:/sms/verify
++ 方法:`POST`   接口:`/sms/verify`
 
 + 请求(Request)  (application/x-www-form-urlencoded
 )
@@ -9,16 +9,14 @@
 + 响应(Response) 状态码:200   响应类型: (text/plain; charset=utf-8)
 
     + 响应头-Headers
-
             Expires: 0
-
     + 响应体-Body
 
             {"status":468}
 
 
 #### 首页滚动条 
-+ 方法:GET   接口:/api/school/slider?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`GET`   接口:`/api/school/slider?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request) 
 
@@ -36,7 +34,8 @@
 
     + 响应体-Body
 
-            ```javascript
+```javascript
+
             {
                 "status": 2000,
                 "message": "获取滑块成功",
@@ -64,7 +63,8 @@
                     }
                 ]
             }
-            ```
+
+```
             
 
 
