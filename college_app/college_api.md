@@ -9,7 +9,9 @@
 + 响应(Response) 状态码:200   响应类型: (text/plain; charset=utf-8)
 
     + 响应头-Headers
+
             Expires: 0
+
     + 响应体-Body
 
             {"status":468}
@@ -34,8 +36,7 @@
 
     + 响应体-Body
 
-```javascript
-
+            ```javascript
             {
                 "status": 2000,
                 "message": "获取滑块成功",
@@ -63,13 +64,11 @@
                     }
                 ]
             }
-
-```
-            
+            ```
 
 
 #### 学校概况 
-+ 方法:GET   接口:/api/school/info?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`GET`   接口:`/api/school/info?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request) 
 
@@ -110,7 +109,7 @@
 
 
 #### 首页小图新闻 
-+ 方法:GET   接口:/api/school/simgnewslist?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/school/simgnewslist?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -160,11 +159,10 @@
                 ]
             }
             ```
-            
 
 
 #### 历史沿革 
-+ 方法:GET   接口:/api/school/schoolhistory?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/school/schoolhistory?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -199,7 +197,7 @@
 
 
 #### 现任领导 
-+ 方法:GET   接口:/api/school/schoolleader?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/school/schoolleader?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -234,7 +232,7 @@
 
 
 #### 院系专业 
-+ 方法:GET   接口:/api/school/schoolmajor?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/school/schoolmajor?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -275,11 +273,10 @@
                 ]
             }
             ```
-            
 
 
 #### 院系新闻 
-+ 方法:GET   接口:/api/school/schoolnews?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`GET`   接口:`/api/school/schoolnews?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request) 
 
@@ -314,11 +311,10 @@
                 ]
             }
             ```
-            
 
 
 #### 社会新闻 
-+ 方法:GET   接口:/api/schoolnews/socialnews?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`GET`   接口:`/api/schoolnews/socialnews?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request) 
 
@@ -376,11 +372,10 @@
                 ]
             }
             ```
-            
 
 
 #### 通知公告 
-+ 方法:GET   接口:/api/schoolnews/notice?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/schoolnews/notice?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -424,11 +419,10 @@
                 ]
             }
             ```
-            
 
 
 #### 忘记密码 
-+ 方法:POST   接口:/api/sign/forget?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/sign/forget?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -452,7 +446,7 @@
 
 
 #### 注册帐号 
-+ 方法:POST   接口:/api/sign/signup?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/sign/signup?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (text/plain; charset=utf-8)
 
@@ -476,7 +470,7 @@
 
 
 #### 登录帐号 
-+ 方法:POST   接口:/api/sign/signin?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/sign/signin?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -504,7 +498,7 @@
 
 
 #### 生活页面 
-+ 方法:GET   接口:/api/life/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/life/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -591,11 +585,10 @@
                 }
             }
             ```
-            
 
 
 #### 投票活动详情 
-+ 方法:POST   接口:/api/life/actdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/life/actdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -638,11 +631,10 @@
                 }
             }
             ```
-            
 
 
 #### 投票活动列表 
-+ 方法:GET   接口:/api/life/list/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/life/list/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -716,11 +708,10 @@
                 ]
             }
             ```
-            
 
 
 #### 一起玩组详情 
-+ 方法:POST   接口:/api/play/groupdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/play/groupdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -791,11 +782,10 @@
                 }
             }
             ```
-            
 
 
 #### 一起玩群组成员 
-+ 方法:POST   接口:/api/play/groupdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/play/groupdetail/index?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -866,11 +856,10 @@
                 }
             }
             ```
-            
 
 
 #### 一起玩个人信息 
-+ 方法:POST   接口:/api/play/playinfo?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/play/playinfo?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -897,11 +886,10 @@
                 "data": false
             }
             ```
-            
 
 
 #### 树洞首页 
-+ 方法:GET   接口:/api/treehole/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/treehole/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -919,11 +907,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 树洞详情 
-+ 方法:POST   接口:/api/treehole/treeholedetail?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/treehole/treeholedetail?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -943,11 +931,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 淘渔 
-+ 方法:GET   接口:/api/schooltao/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/schooltao/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -965,11 +953,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 淘渔详情 
-+ 方法:POST   接口:/api/schooltao/goodsdetail?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/schooltao/goodsdetail?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -989,11 +977,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 兼职 
-+ 方法:GET   接口:/api/parttime/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`GET`   接口:`/api/parttime/index?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request) 
 
@@ -1028,11 +1016,10 @@
                 ]
             }
             ```
-            
 
 
 #### 兼职详情 
-+ 方法:POST   接口:/api/parttime/partdetail?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/parttime/partdetail?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1072,11 +1059,10 @@
                 }
             }
             ```
-            
 
 
 #### 删除注册用户和环信 
-+ 方法:POST   接口:/api/student/delstudent?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/student/delstudent?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1103,11 +1089,10 @@
                 "data": ""
             }
             ```
-            
 
 
 #### 朋友创建群组-form 
-+ 方法:POST   接口:/api/friendgroup/addgroup?signature=ad569e516e5d6d1b10e607956fd7059f
++ 方法:`POST`   接口:`/api/friendgroup/addgroup?signature=ad569e516e5d6d1b10e607956fd7059f`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1131,11 +1116,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 修改群组 
-+ 方法:POST   接口:/api/friendgroup/editfriendgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/editfriendgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1158,11 +1143,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 删除群组 
-+ 方法:POST   接口:/api/friendgroup/delgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/delgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1185,11 +1170,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 退出群组 
-+ 方法:POST   接口:/api/friendgroup/quitgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/quitgroup?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1225,11 +1210,10 @@
                 }
             }
             ```
-            
 
 
 #### 添加好友 
-+ 方法:POST   接口:/api/friendgroup/addfriend?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/addfriend?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1252,11 +1236,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 删除好友 
-+ 方法:POST   接口:/api/friendgroup/addfriend?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/addfriend?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1279,11 +1263,11 @@
 
     + 响应体-Body
 
-            `:x:系统发生错误:x:`
+            :x:系统发生错误:x:
 
 
 #### 加入黑名单 
-+ 方法:POST   接口:/api/friendgroup/addbalck?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/addbalck?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1318,11 +1302,10 @@
                 }
             }
             ```
-            
 
 
 #### 查询用户 
-+ 方法:POST   接口:/api/friendgroup/getusername?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/getusername?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
@@ -1355,11 +1338,10 @@
                 }
             }
             ```
-            
 
 
 #### 发送文本信息 
-+ 方法:POST   接口:/api/friendgroup/sendtext?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8
++ 方法:`POST`   接口:`/api/friendgroup/sendtext?signature=ad569e516e5d6d1b10e607956fd7059f&limit=8`
 
 + 请求(Request)  (application/x-www-form-urlencoded; charset=utf-8)
 
