@@ -1,0 +1,231 @@
+/* @generated */
+body {
+	background-color: #000
+}
+.index-page .gheader-wp .gheader {
+	margin-top: 0;
+	padding-top: 10px
+}
+.wrap {
+	width: 100%;
+	margin: 0;
+	background-image: url("./background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.board-web {
+	margin: 66px auto 0
+}
+.board1-iphone {
+	display: block;
+	position: absolute;
+	width: 199px;
+	height: 77px;
+	left: 588px;
+	top: 182px;
+	background: url("./iphone-download.png") no-repeat
+}
+.board-web {
+	width: 1025px;
+	height: 665px;
+	margin-top: 5%
+}
+.board-web .iphone-img {
+	float: left
+}
+.side-img {
+	float: left;
+	margin-bottom: 27px
+}
+.side-jingxuan {
+	float: left;
+	margin-left: 43px;
+	padding: 22px 0;
+	width: 236px;
+	color: #fff
+}
+.side-jingxuan .jingxuan-taitle {
+	display: inline-block;
+	font-size: 49px;
+	line-height: 56px
+}
+.side-jingxuan .jingxuan-verson {
+	display: inline-block;
+	margin-top: 2px;
+	font-size: 20px;
+	line-height: 1.2em;
+	vertical-align: top
+}
+.side-jingxuan .jingxuan-slogan {
+	display: inline-block;
+	font-size: 27px;
+	line-height: 1.6em;
+	letter-spacing: .24em
+}
+.side-download {
+	float: left;
+	width: 488px;
+	height: 43px
+}
+.side-download .iphone-btn {
+	position: relative;
+	display: inline-block;
+	padding: 0 0 0 47px;
+	height: 43px;
+	width: 115px;
+	line-height: 43px;
+	color: #fff;
+	background: rgba(255, 0, 0, 0.48);
+	border: 1px solid rgba(255, 0, 0, 0.52);
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: default
+}
+.side-download .iphone-btn:before {
+	content: '';
+	position: absolute;
+	left: 16px;
+	top: 8px;
+	width: 22px;
+	height: 22px;
+	background: url("./ios-logo.png") no-repeat
+}
+.side-download .iphone-btn:hover {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .iphone-btn:pressed {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .android-btn {
+	position: relative;
+	display: inline-block;
+	margin-left: 14px;
+	padding: 0 0 0 47px;
+	height: 43px;
+	width: 115px;
+	line-height: 43px;
+	color: #fff;
+	background: rgba(255, 0, 0, 0.48);
+	border: 1px solid rgba(255, 0, 0, 0.52);
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: default
+}
+.side-download .android-btn:before {
+	content: '';
+	position: absolute;
+	left: 14px;
+	top: 8px;
+	width: 22px;
+	height: 22px;
+	background: url("./android-logo.png") no-repeat
+}
+.side-download .android-btn:hover {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .android-btn:pressed {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .download-btn {
+	position: relative;
+	display: inline-block;
+	margin-left: 14px;
+	padding: 0 0 0 47px;
+	height: 43px;
+	width: 115px;
+	line-height: 43px;
+	color: #fff;
+	background: rgba(255, 0, 0, 0.48);
+	border: 1px solid rgba(255, 0, 0, 0.52);
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: default
+}
+.side-download .download-btn:before {
+	content: '';
+	position: absolute;
+	left: 14px;
+	top: 8px;
+	width: 22px;
+	height: 22px;
+	background: url("./QRcode-logo.png") no-repeat
+}
+.side-download .download-btn:hover {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .download-btn:pressed {
+	background: rgba(255, 0, 0, 0.8)
+}
+.side-download .download-btn .QRcode-show {
+	display: none;
+	width: 140px;
+	height: 149px;
+	background: url("./QRcode.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 43px;
+	left: -14px
+}
+.side-download .download-btn:hover .QRcode-show {
+	display: block
+}
+.board-web .board2-iphone, .board-web .board2-android {
+	float: right;
+	display: block;
+	width: 135px;
+	height: 40px;
+	margin-left: 30px
+}
+.board2-iphone {
+	background: url("./iphone-download.png") no-repeat
+}
+.board2-android {
+	background: url("./an-download.png") no-repeat
+}
+.board2-wandoujia {
+	float: left;
+	display: block;
+	width: 158px;
+	height: 40px;
+	background: url("./wandoujia-download.png") no-repeat
+}
+.iphone-down, .android-down {
+	float: right;
+	margin-top: 80px;
+	margin-left: 40px;
+	width: 130px;
+	height: 130px;
+	font-size: 14px;
+	line-height: 1.75em
+}
+.ad-area {
+	width: 892px;
+	height: 68px;
+	margin: 0 auto
+}
+.ad-area ul {
+	margin-left: 68px
+}
+.ad-area li {
+	float: left;
+	width: 180px;
+	height: 68px;
+	margin-right: 26px
+}
+.download_intro {
+	font-size: 14;
+	color: #999;
+	text-align: center
+}
+.gbottom {
+	height: 60px;
+	color: #737373;
+	background-color: #000;
+	margin-top: 30px
+}
